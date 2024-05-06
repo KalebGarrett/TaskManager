@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>disable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+        <ApplicationIcon>name.ico</ApplicationIcon>
+        <RootNamespace>Name.App</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Images\homekit-bg-4.jpeg" />
+      <Resource Include="Images\gradient-bg.jpeg" />
+      <None Remove="Images\Smooth-bg.jpg" />
+      <Resource Include="Images\Smooth-bg.jpg" />
+      <None Remove="Images\dark-bg.jpg" />
+      <Resource Include="Images\dark-bg.jpg" />
+      <None Remove="Images\blue-gradient.jpg" />
+      <Resource Include="Images\blue-gradient.jpg" />
+      <None Remove="Images\pexels-codioful-7130475.jpg" />
+      <Resource Include="Images\pexels-codioful-7130475.jpg" />
+      <None Remove="Images\8194.jpg" />
+      <Resource Include="Images\8194.jpg" />
+      <None Remove="Images\purple pc.png" />
+      <Resource Include="Images\purple pc.png" />
+      <None Remove="Images\purple ram.png" />
+      <Resource Include="Images\purple ram.png" />
+    </ItemGroup>
+
+</Project>

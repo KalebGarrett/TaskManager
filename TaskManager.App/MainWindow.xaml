@@ -1,0 +1,79 @@
+﻿<Window x:Class="Name.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Name.App"
+        mc:Ignorable="d"
+        Title="Task Manager" Height="450" Width="600">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/8194.jpg" Stretch="Fill" />
+    </Window.Background>
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5, 0, 5, 5">
+            <Border Width="245" Height="285" Background="Black" Opacity="0.9" CornerRadius="15"
+                    HorizontalAlignment="Right" Margin="0 ,0,15,0">
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Width="55" Height="55" HorizontalAlignment="Right">
+                        <Image.Source>
+                            <BitmapImage UriSource="Images/purple ram.png"/>
+                        </Image.Source>
+                    </Image>
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Left" FontFamily="Verdana" Foreground="White" FontSize="18" FontWeight="Bold" Text="Hardware" Margin="9, 5, 6, 6" />
+                    <TextBlock Grid.Row="1" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" FontWeight="Bold" Text="CPU:" Margin="9, 0, 6, 6" />
+                    <TextBlock Grid.Row="2" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" x:Name="CpuText" Margin="9, 1, 6, 6" />
+                    <TextBlock Grid.Row="3" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" FontWeight="Bold" Text="Ram:" Margin="9, 7, 6, 6" />
+                    <TextBlock Grid.Row="4" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" x:Name="RamText" Margin="9, 1, 6, 6" />
+                    <TextBlock Grid.Row="5" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" FontWeight="Bold" Text="Disk:" Margin="9, 7, 6, 6" />
+                    <TextBlock Grid.Row="6" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" x:Name="DiskText" Margin="9, 1, 6, 6" />
+                </Grid>
+            </Border>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="5, 0, 5, 5">
+            <Border Width="245" Height="285" Background="Black" Opacity="0.9" HorizontalAlignment="Left" Margin="15 ,0,0,0"
+                    CornerRadius="15" >
+                <Grid>
+                    <Grid Margin="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0" Width="55" Height="55" HorizontalAlignment="Right">
+                            <Image.Source>
+                                <BitmapImage UriSource="Images/purple pc.png"/>
+                            </Image.Source>
+                        </Image>
+                        <TextBlock Grid.Row="0" HorizontalAlignment="Left" FontFamily="Verdana" Foreground="White" FontSize="18" FontWeight="Bold" Text="PC Info" Margin="9, 5, 6, 6" />
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" FontWeight="Bold" Text="PC Name:" Margin="9, 0, 6, 6" />
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" x:Name="PcText" Margin="9, 1, 6, 6" />
+                        <TextBlock Grid.Row="3" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" FontWeight="Bold" Text="OS Version:" Margin="9, 7, 6, 6" />
+                        <TextBlock Grid.Row="4" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" x:Name="OsText" Margin="9, 1, 6, 6" />
+                        <TextBlock Grid.Row="5" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" FontWeight="Bold" Text="OS Bit Type:" Margin="9, 7, 6, 6" />
+                        <TextBlock Grid.Row="6" HorizontalAlignment="Left" FontFamily="Lucida Sans Unicode" Foreground="White" FontSize="18" x:Name="BitText" Margin="9, 1, 6, 6" />
+                    </Grid>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>
