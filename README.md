@@ -4,7 +4,7 @@ A task manager desktop app built with WPF .NET.
 ---
 
 Download Task Manager: 
-[Download TaskManager.exe](/Executables/TaskManager.exe)
+[TaskManager.exe](/Executables/TaskManager.exe)
 
 ---
 
