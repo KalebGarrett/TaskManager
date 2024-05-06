@@ -10,4 +10,4 @@ Download Task Manager:
 
 ## Screenshots
 
-[image](/Documentation/Images/taskmanager.png)
+![image](/Documentation/Images/taskmanager.png)
